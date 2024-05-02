@@ -38,18 +38,20 @@
                         </div>
                     </div>
                     <div class="social">
-                        <img src="/img/facebook.png" alt="">
-                        <img src="/img/instagram.png" alt="">
-                        <img src="/img/linkedin.png" alt="">
-                        <img src="/img/youtube.png" alt="">
-                        <img src="/img/tiktok.png" alt="">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+                        <img src="img/youtube.png" alt="">
+                        <img src="img/tiktok.png" alt="">
                     </div>
-                    <button class="btn">Apply Online
-                        <img src="img/Email.png" alt="">
-                    </button>
-                    <div class="contact__ico bordered lang">
-                        <img src="img/england.png" alt="">
-                        <img src="img/arrow.png" alt="">
+                    <div class="contact__btns">
+                        <button class="btn">Apply Online
+                            <img src="img/Email.png" alt="">
+                        </button>
+                        <div class="contact__ico bordered lang">
+                            <img src="img/england.png" alt="">
+                            <img src="img/arrow.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,11 +345,11 @@
                                         campus</span></p>
                             </div>
                                 <div class="social">
-                                    <img src="/img/icon_phone.png" alt="">
-                                    <img src="/img/mail.png" alt="">
-                                    <img src="/img/facebook.png" alt="">
-                                    <img src="/img/instagram.png" alt="">
-                                    <img src="/img/button-menu.png" alt="">
+                                    <img src="img/icon_phone.png" alt="">
+                                    <img src="img/msg-mob.png" alt="">
+                                    <img src="img/facebook.png" alt="">
+                                    <img src="img/instagram.png" alt="">
+                                    <img src="img/button-menu.png" class="burger" alt="">
                                 </div>
                         </div>
                 </div>
@@ -357,6 +359,12 @@
                 <div class="study__btns">
                     <button class="btn">STUDY ON CAMPUS</button>
                     <button class="btn transp">STUDY ONLINE</button>
+                </div>
+                <div class="dod__mobile-btns" style="display: none;">
+                    <div class="dod__mobile-wrapper">
+                        <img src="img/button_apply_online_dop.png" alt="">
+                        <img src="img/batton_social_mes_dop.png" alt="">
+                    </div>
                 </div>
                 <div class="slider__btns">
                     <img src="img/arr-left.png" alt="" class="prev__btn">
@@ -417,9 +425,9 @@
                 <input type="submit" value="Send" class="btn blue submit">
             </form>
             <form action="" name="sendform" class="form__mob" style="display: none;">
-                <input type="text" name="name" placeholder="Name:">
-                <input type="phone" name="phone" placeholder="Phone:">
-                <input type="email" name="email" placeholder="Email:">
+                <input type="text" name="name" placeholder="Name...">
+                <input type="phone" name="phone" placeholder="Phone...">
+                <input type="email" name="email" placeholder="Email...">
                 <img src="img/button-send.png" alt="">
             </form>
         </div>
@@ -525,6 +533,24 @@
     </div>
 
     <div class="school__mobile" style="display: none;">
+        <form action="" name="sendform" class="complete__form" style="display: none;">
+            <h1>complete the form</h1>
+            <input type="text" name="name" placeholder="Name" id="name">
+            <p>Field is filled correctly</p>
+            <input type="email" name="email" placeholder="Email" id="email">
+            <p>Field is filled correctly</p>
+            <div class="send__form">
+                <input type="phone" name="phone" placeholder="Phone" id="phone">
+                <!-- <input type="submit" value="Send" class="btn blue submit"> -->
+                <button class="btn blue submit" type="submit" value="Send">Send
+                    <p class="last__send">Send</p>
+                </button>
+            </div>
+            <div class="send__form-text">
+                <p>Field is filled correctly</p>
+                <!-- <p class="last__send">Send</p> -->
+            </div>
+        </form>
         <div class="school__header">
             <h1>University Schools</h1>
             <img src="img/line.png" alt="">

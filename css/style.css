@@ -49,6 +49,9 @@ main {
 .sidebar {
     background: linear-gradient(180deg, #C50000 0%, #A70000 100%);
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar h1 {
@@ -56,7 +59,7 @@ main {
     transform: rotate(180deg);
     font-size: 16px;
     color: #fff;
-    margin: 90px 0 40px 7px;
+    margin: 105px 0 25px 0;
 }
 
 .side__items {
@@ -68,6 +71,8 @@ main {
     padding: 5px;
     cursor: pointer;
     margin: 4px 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .side__ico:hover {
@@ -84,14 +89,14 @@ header {
     width: 98%;
     border-radius: 10px;
     top: 15px;
-    left: 20px;
+    left: 13px;
     z-index: 3;
 }
 
 .header__cont {
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px;
+    padding: 15px 23px;
 }
 
 .logo {
@@ -104,6 +109,7 @@ header {
     font-size: 12px;
     font-weight: 600;
     line-height: 10px;
+    color: #001C54;
 }
 
 .logo__text:nth-child(2) {
@@ -124,6 +130,7 @@ header {
 .contact {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
 .contact__det {
@@ -139,6 +146,7 @@ header {
 .contact__info p {
     font-size: 10px;
     color: #D00000;
+    font-weight: 600;
 }
 
 .contact__ico.bordered {
@@ -170,11 +178,21 @@ header {
     padding-left: 15px;
 }
 
+.contact__btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .lang {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
+}
+
+.contact__ico.bordered.lang{
+    padding: 17px 8px;
 }
 
 .slide h1 {
@@ -230,7 +248,7 @@ header {
 .form__wrapper {
     position: absolute;
     bottom: 15px;
-    left: 20px;
+    left: 13px;
     background-color: #fff;
     width: 98%;
     border-radius: 10px;
@@ -328,7 +346,7 @@ button {
 .menu__list {
     display: flex;
     flex-direction: column;
-    gap: 13.5px;
+    gap: 14px;
     list-style-type: none;
     padding: 0;
     margin-top: 50px;
@@ -404,7 +422,7 @@ button {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
-    gap: 30px;
+    gap: 103px;
 }
 
 .ems {
@@ -448,8 +466,8 @@ button {
     align-items: center;
     justify-content: center;
     width: 22%;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(60deg, #F8F8F8 0%, #fff 100%);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.10);
+    background: linear-gradient(135deg, #F8F8F8 0%, #fff 100%);
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
@@ -496,7 +514,7 @@ button {
     margin-bottom: 15px;
     color: #001C54;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     margin-top: 5%;
 }
 
@@ -509,8 +527,8 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(60deg, #F8F8F8 0%, #fff 100%);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.10);
+    background: #fdfdfd;
     padding: 10px 30px;
     border-radius: 6px;
     margin-bottom: 24px;
@@ -573,6 +591,10 @@ button {
         margin-bottom: 10px;
     }
 
+    .contact__info, .logo {
+        text-align: start;
+    }
+
     .contact__info p {
         font-size: 8px !important;
     }
@@ -587,6 +609,15 @@ button {
         padding: 3px;
     }
 
+    .social img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .burger {
+        margin-left: 10px;
+    }
+
     .slide {
         justify-content: start;
         text-align: center;
@@ -594,15 +625,28 @@ button {
 
     .slide h1 {
         margin-top: 20%;
-        font-size: 62px;
+        font-size: 48px;
     }
 
     .slide h2 {
-        font-size: 35px;
+        font-size: 27px;
     }
 
     .slide button {
         width: auto;
+    }
+
+    .dod__mobile-btns {
+        display: block !important;
+        position: absolute;
+        bottom: 90px;
+        right: 4px;
+    }
+
+    .dod__mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .form input {
@@ -698,12 +742,93 @@ button {
         margin: 0 auto;
     }
 
+    .school__header h1 {
+        font-size: 20px;
+    }
+
+    .school__header img {
+        width: 75%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
     .school__list {
         justify-content: center;
         gap: 10px;
         padding-bottom: 20px;
-        border-bottom: solid 2px #001C54;
+        border-bottom: solid 1px #001C54;
         margin-bottom: 20px;
+    }
+
+    .complete__form {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.10);
+        background: linear-gradient(180deg, #F8F8F8 0%, #fff 100%);
+        padding: 20px 20px 10px 20px;
+        margin-top: 20px;
+        color: #001C54;
+    }
+
+    .complete__form h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .complete__form input {
+        width: 100%;
+        border-radius: 5px;
+        border: solid 1px #001C54;
+        color: #001C54;
+        padding: 5px 10px;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    .send__form {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn.blue.submit {
+        position: relative;
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .complete__form p {
+        font-size: 7px;
+        color: #03A300;
+        margin-left: 10px;
+    }
+
+    .last__send {
+        position: absolute;
+        right: 42%;
+        top: 35px;
+    }
+
+    .btn.white {
+        font-size: 10px;
+        margin-top: 25px;
+        margin-left: 15%;
+        padding: 5px;
+    }
+
+    .btn.white img {
+        width: 10px;
+        margin-left: 5px;
+    }
+
+    .send__form-text {
+        display: flex;
+        justify-content: space-between;
     }
 
     .school__item {
@@ -711,14 +836,30 @@ button {
         display: flex;
         flex-direction: row;
         gap: 5px;
+        padding: 5px 3px;
+    }
+
+    .mob__school-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .school__item img {
+        margin-bottom: 0;
+        width: 18px;
+        height: 18px;
     }
 
     .eur {
         font-size: 8px;
+        margin-bottom: 0;
     }
 
     .sch__type { 
         font-size: 4px;
+        font-weight: 400;
+        text-align: center;
     }
 
     .eaes {
@@ -733,10 +874,12 @@ button {
 
     .about__ems h5 {
         font-size: 13px;
+        font-weight: 300;
     }
 
     .about__ems p {
         font-size: 13px;
+        font-weight: 300;
     }
 
     .progr__header {
