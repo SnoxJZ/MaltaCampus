@@ -139,7 +139,7 @@ header {
 
 .contact__info h1 {
     font-size: 18px !important;
-    /* width: 100%; */
+    width: 100% !important;
     color: #001C54 !important;
 }
 
@@ -626,6 +626,7 @@ button {
     .slide h1 {
         margin-top: 20%;
         font-size: 48px;
+        width: 80%;
     }
 
     .slide h2 {
@@ -812,6 +813,10 @@ button {
         position: absolute;
         right: 42%;
         top: 35px;
+    }
+
+    .contact__ico.bordered {
+        margin-right: 5px;
     }
 
     .btn.white {
